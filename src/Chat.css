@@ -1,0 +1,107 @@
+.chat {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.chat-headerinfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat-headerinfo > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat-headerinfo > p {
+  color: gray;
+}
+
+.chat-headerright {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.chat-body {
+  flex: 1;
+  /* LET USER CHANGE BACKGROUND */
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/the-whistleoo-app.appspot.com/o/1.jpg?alt=media&token=dbc36635-f871-4c83-8d95-5a824f841e6d");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: scroll;
+  color: black;
+}
+
+.chat-name {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  font-weight: 900;
+  font-size: x-small;
+  color: black;
+}
+
+.chat-message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  background-color: white;
+  border-radius: 11px;
+  margin-bottom: 30px;
+}
+
+.chat-timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+  color: black;
+}
+
+.chat-receiver {
+  margin-left: auto;
+  background-color: rgba(0, 68, 255, 0.87);
+  color: white;
+}
+
+.chat-receiver > .chat-timestamp {
+  color: rgba(255, 255, 255, 0.788);
+}
+.chat-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+
+.chat-footer > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat-footer > form > input {
+  flex: 1;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+
+.chat-footer > form > button {
+  display: none;
+}
+
+.chat-footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+}
